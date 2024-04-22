@@ -9,6 +9,7 @@ import udemy from '../../public/udemy.avif'
 import spotify from '../../public/spotifyimg.avif'
 import nike from '../../public/nike.avif'
 import mindscape from '../../public/mindscape.avif'
+import audioweb from '../../public/tms-audio.avif'
 
 import reactsvg from '../../public/react.svg'
 import tailwindsvg from '../../public/tailwind.svg'
@@ -25,6 +26,16 @@ import typescriptsvg from '../../public/typescript.svg'
 
 const useProyectos = () => {
   const [proyectos, setProyectos] = useState([
+    {
+      title: 'Tienda online de audio',
+      link: 'https://tms-audio-web.netlify.app/',
+      githubLink: 'https://github.com/Tomass97/tmsaudio-web',
+      image: audioweb,
+      technologies: [csssvg, reactsvg, vitesvg],
+      shadowColor: 'shadow-blue-500',
+      buttonColor: 'bg-blue-500',
+      titleColor:   'text-blue-500'
+    },
     {
       title: 'Web reservas TMS-EATS',
       link: 'https://reservas-tms.netlify.app/',
